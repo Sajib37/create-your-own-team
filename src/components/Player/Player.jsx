@@ -8,6 +8,7 @@ const Player = ({ player ,handleSelectedPlayers}) => {
     const [isSelected, setIsSelected] = useState(false);
     const handleSelectbutton = () => {
         setIsSelected(true)
+        swal("Great Job!!!", `You have selected an energetic player ${name}.`, "success");
     }
     return (
         <div className="card card-compact  bg-base-100 shadow-xl rounded-lg">
